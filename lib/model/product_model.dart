@@ -1,0 +1,2 @@
+/// ProductModel
+class ProductModel {}
