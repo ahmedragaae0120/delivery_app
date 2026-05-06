@@ -7,7 +7,14 @@ environment:
   sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
+  bcrypt: ^1.2.0
   dart_frog: ^1.1.0
+  dart_jsonwebtoken: ^3.4.0
+  dotenv: ^4.2.0
+  mime: ^2.0.0
+  postgres: ^3.5.9
+  supabase: ^2.10.2
+  uuid: ^4.5.3
 
 dev_dependencies:
   dart_frog_lint: ^0.1.0

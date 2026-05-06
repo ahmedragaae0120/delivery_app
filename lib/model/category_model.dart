@@ -6,11 +6,11 @@ class CategoryModel {
     required this.name,
   });
 
-  ///fromJson
-  factory CategoryModel.fromJson(Map<String, dynamic> json) {
+  ///fromColumnMap
+  factory CategoryModel.fromColumnMap(Map<String, dynamic> map) {
     return CategoryModel(
-      id: json['id'] as String? ?? '',
-      name: json['name'] as String? ?? '',
+      id: map['id'] as String? ?? '',
+      name: map['name'] as String? ?? '',
     );
   }
 

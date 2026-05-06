@@ -7,11 +7,11 @@ abstract class ProductsRepository {
   Future<List<ProductModel>> getAll({
     required int limit,
     required int offset,
-    bool? isCompleted,
+    String? categoryId,
   });
 
   /// getById
-  Future<ProductModel> getById(String id);
+  Future<ProductModel?> getById(String id);
 
   /// create
   Future<void> create(
@@ -21,7 +21,12 @@ abstract class ProductsRepository {
   );
 
   /// update
-  Future<void> update(String id, ProductModel product);
+  Future<void> update(
+    String id,
+    ProductModel product,
+    String mimeType,
+    UploadedFile? image,
+  );
 
   /// delete
   Future<void> delete(String id);
